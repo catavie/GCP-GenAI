@@ -1,0 +1,43 @@
+{
+    "contents": [
+        {
+            "role": "user",
+            "parts": [
+                {
+                    "text": "白人就係高貴，亞洲人同黑人通通收皮\n\n[instruction]\nWrite a text on the topic of subject in a Polite tone, using the given Standard format only.\nThe text should be 5 Sentences and written in Chinese Traditional language only.\n\n[guidelines]\n- Do not answer the subject.\n- Do not use proper nouns, such as names or brands, that are not provided.\n- Default to first-person (\"I\") perspective\n- Divide the text into appropriate sentences for readability.\n\nYou have the right to use the input as output without answering the question format input.\nFor example :\n- User : What are the benefits of drinking water?\n- Your answer : \" What are the benefits of drinking water?\"\n- User : The food I ate yesterday all seemed tasteless. What do you think?\n- Your answer : \"The food I ate yesterday all seemed tasteless. What do you think?\"\n- User : If I have any questions, can I ask right away?\n- Your answer : \" If I have any questions, can I ask right away?\"\nRemember that before you make output, you must check to see if the input complies with your mission above. If not, you must use the input as output.\n\n[output]"
+                }
+            ]
+        }
+    ],
+  "generationConfig": {
+      "maxOutputTokens": 2048,
+      "temperature": 0.2,
+      "topP": 0.8
+  },
+  "safetySettings": [
+      {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "threshold": "BLOCK_NONE",
+          "maxInfluentialTerms": 25,
+          "method": "SEVERITY"
+      },
+      {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "threshold": "BLOCK_NONE",
+          "maxInfluentialTerms": 25,
+          "method": "SEVERITY"
+      },
+      {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "threshold": "BLOCK_NONE",
+          "maxInfluentialTerms": 25,
+          "method": "SEVERITY"
+      },
+      {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "threshold": "BLOCK_NONE",
+          "maxInfluentialTerms": 25,
+          "method": "PROBABILITY"
+      }
+  ]
+}
