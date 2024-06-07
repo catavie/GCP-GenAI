@@ -43,7 +43,7 @@ def get_gemini_pro_text_response(
 st.header("Vertex AI Gemini 1.5 Flash API", divider="rainbow")
 
 st.write("Using Gemini 1.5 Flash - multi-turn chat")
-st.subheader("Build an order")
+st.subheader("Build a story")
 
 # Story premise
 character_name = st.text_input(
